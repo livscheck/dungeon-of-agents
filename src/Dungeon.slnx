@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="Dungeon.Cli/Dungeon.Cli.csproj" />
+  <Project Path="Dungeon.Core/Dungeon.Core.csproj" />
+</Solution>

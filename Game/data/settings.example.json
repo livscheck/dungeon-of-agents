@@ -1,0 +1,36 @@
+{
+  // Copy this file to settings.json and edit it. Comments are allowed.
+
+  // Your first name: agents address you by it, and it marks "manual" columns in the dashboard.
+  "userName": "YourName",
+
+  // false = base mode: every Claude Code session is a character with a status line. Nothing else to set up.
+  // true  = also load the project layer (dashboard/checklist notes, test prep, QA handoff). Read README first.
+  "projectWorkflow": false,
+
+  // Project numbers look like PREFIX-000123 in the dashboard, checklist and clone folder names.
+  "projectPrefix": "PRJ",
+
+  // ---- Only used when projectWorkflow is true -------------------------------------------------
+  // Folder that holds "Project Dashboard.md" and "Test Checklist.md" (see templates/).
+  "vaultDir": "C:\\Users\\YOU\\Notes\\Agent Viewer",
+
+  // Where an agent copies files so you can test locally (only mentioned to agents in briefings).
+  "localTestFolder": "C:\\MyApp",
+
+  // Shared QA folder to verify a hand copy against (read-only). Leave "" to turn the QA copy check off.
+  "qaRoot": "",
+  "qaSyncLists": [],
+
+  // Where project clones live. Folders are matched as <PREFIX>-<number>-<title>; see ProjectRepo.cs.
+  "pluginConfig": "",
+  "repoRoots": [
+    { "path": "C:\\Repos", "interface": false }
+  ],
+
+  // Skills the game asks agents to run. Change to your own skills or leave as-is if unused.
+  "runProjectSkill": "my-plugin:run-project",
+  "testPrepSkill": "my-plugin:test-prep",
+  "syncListSkill": "update-sync-list",
+  "tdSkill": "generate-td"
+}
